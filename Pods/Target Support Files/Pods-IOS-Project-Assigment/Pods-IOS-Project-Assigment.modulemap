@@ -1,0 +1,6 @@
+framework module Pods_IOS_Project_Assigment {
+  umbrella header "Pods-IOS-Project-Assigment-umbrella.h"
+
+  export *
+  module * { export * }
+}

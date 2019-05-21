@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56264A522294897B004638BA /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56264A512294897B004638BA /* Tools.swift */; };
 		564680172292063300E9326A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 564680162292063300E9326A /* Default-568h@2x.png */; };
 		5646801B2293266D00E9326A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5646801A2293266D00E9326A /* GoogleService-Info.plist */; };
 		5646801F2293481D00E9326A /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5646801E2293481D00E9326A /* HomeScreenViewController.swift */; };
@@ -28,6 +29,7 @@
 		02563228C631532FBFF1C902 /* Pods-IOS-Project-Assigment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-Project-Assigment.debug.xcconfig"; path = "Target Support Files/Pods-IOS-Project-Assigment/Pods-IOS-Project-Assigment.debug.xcconfig"; sourceTree = "<group>"; };
 		0C83CF0428153AB4109EA604 /* Pods-IOS-Project-Assigment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-Project-Assigment.release.xcconfig"; path = "Target Support Files/Pods-IOS-Project-Assigment/Pods-IOS-Project-Assigment.release.xcconfig"; sourceTree = "<group>"; };
 		53FB091DC91597F1793B9D70 /* Pods_IOS_Project_Assigment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Project_Assigment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56264A512294897B004638BA /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		564680162292063300E9326A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5646801A2293266D00E9326A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5646801E2293481D00E9326A /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				B0E7901B20250813002DA8AF /* LaunchScreen.storyboard */,
 				B0E7901E20250813002DA8AF /* Info.plist */,
 				5646801A2293266D00E9326A /* GoogleService-Info.plist */,
+				56264A512294897B004638BA /* Tools.swift */,
 			);
 			path = "IOS-Project-Assigment";
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				B0E7902E2025085E002DA8AF /* HelperExtensions.swift in Sources */,
 				B0E7902A2025085E002DA8AF /* LoginViewController.swift in Sources */,
 				B0E7902F2025085E002DA8AF /* SignUpViewController.swift in Sources */,
+				56264A522294897B004638BA /* Tools.swift in Sources */,
 				B0E7902C2025085E002DA8AF /* RoundedWhiteButton.swift in Sources */,
 				B0E7901520250813002DA8AF /* ViewController.swift in Sources */,
 				5646801F2293481D00E9326A /* HomeScreenViewController.swift in Sources */,

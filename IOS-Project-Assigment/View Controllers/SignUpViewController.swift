@@ -48,10 +48,12 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         usernameField.delegate = self
         emailField.delegate = self
         passwordField.delegate = self
+        ConfpasswordField.delegate = self
         
         usernameField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         emailField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         passwordField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        ConfpasswordField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
     }
     
     
@@ -68,6 +70,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         usernameField.resignFirstResponder()
         emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
+        ConfpasswordField.resignFirstResponder()
         
         NotificationCenter.default.removeObserver(self)
     }
@@ -107,7 +110,8 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         let username = usernameField.text
         let email = emailField.text
         let password = passwordField.text
-        let formFilled = username != nil && username != "" && email != nil && email != "" && password != nil && password != ""
+        let confopassword = ConfpasswordField.text
+        let formFilled = username != nil && username != "" && email != nil && email != "" && password != nil && password != "" && confopassword != nil && confopassword != ""
         setContinueButton(enabled: formFilled)
     }
     
@@ -127,6 +131,12 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
             passwordField.becomeFirstResponder()
             break
         case passwordField:
+            passwordField.resignFirstResponder()
+            ConfpasswordField.becomeFirstResponder()
+            //handleSignUp()
+            break
+        case ConfpasswordField:
+           
             handleSignUp()
             break
         default:
@@ -149,10 +159,14 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         }
     }
     
-    @objc func handleSignUp() {
+    
+    private func signUp() {
+        
         guard let username = usernameField.text else { return }
         guard let email = emailField.text else { return }
         guard let password = passwordField.text else { return }
+        guard let ConfirmpasswordField = ConfpasswordField.text else { return }
+        
         
         setContinueButton(enabled: false)
         continueButton.setTitle("", for: .normal)
@@ -181,32 +195,51 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
             }
             else{
                 print("Error:\(Error!.localizedDescription )")
+                return 
             }
         }
         
+    }
+    
+    @objc func handleSignUp() {
+       
+        if (validateForm()){
+            signUp()
+        }
         
     }
 
     private func validateForm() -> Bool {
         
         if usernameField.text == "" {
-            lblError.text = "Please enter a username"
+            //lblError.text = "Please enter a username"
+            
+             print("Please enter a username")
             return false
+            
+            
+            
         }
         if usernameField.text?.count ?? 0 < 6 {
-            lblError.text = "Username should be at least 6 characters long"
+            //lblError.text = "Username should be at least 6 characters long"
+            
+            print("Username should be at least 6 characters long")
             return false
         }
         if emailField.text == "" || Tools.isValidEmail(testStr: emailField.text ?? "") {
-            lblError.text = "Please enter a valid email"
+            //lblError.text = "Please enter a valid email"
+            print("Paaword should be at least 6 characters long")
             return false
         }
         if passwordField.text == "" || passwordField.text?.count ?? 0 < 6 {
-            lblError.text = "Paaword should be at least 6 characters long"
+           // lblError.text = "Paaword should be at least 6 characters long"
+            
+            print("Paaword should be at least 6 characters long")
             return false
         }
         if passwordField.text != ConfpasswordField.text {
-            lblError.text = "Passwords doesnot match"
+            print("Passwords doesnot match")
+            //lblError.text = "Passwords doesnot match"
             return false
         }
         

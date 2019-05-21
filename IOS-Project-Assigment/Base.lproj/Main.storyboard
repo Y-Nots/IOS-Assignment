@@ -318,13 +318,13 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ca6-HV-CAY">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ca6-HV-CAY">
                                                         <rect key="frame" x="12" y="287" width="279" height="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z87-jh-cIS">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z87-jh-cIS">
                                                         <rect key="frame" x="12" y="313" width="279" height="1"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -334,6 +334,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
+                                                    <constraint firstItem="Ca6-HV-CAY" firstAttribute="leading" secondItem="LM9-EG-J4a" secondAttribute="leading" id="2o6-Tm-mWs"/>
                                                     <constraint firstItem="ZQB-70-0wG" firstAttribute="top" secondItem="vqa-zm-TTa" secondAttribute="bottom" constant="12" id="4bd-sN-Y52"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RHg-Vt-zzx" secondAttribute="trailing" constant="20" symbolic="YES" id="5QT-UV-8eL"/>
                                                     <constraint firstItem="Cuu-vQ-aD6" firstAttribute="top" secondItem="ZQB-70-0wG" secondAttribute="bottom" constant="4" id="8Mh-xv-Pke"/>
@@ -344,6 +345,7 @@
                                                     <constraint firstItem="LM9-EG-J4a" firstAttribute="width" secondItem="5pa-J1-ebg" secondAttribute="width" id="G3l-ug-Gxg"/>
                                                     <constraint firstItem="PU8-Je-WmA" firstAttribute="top" secondItem="4sh-Mw-yec" secondAttribute="top" constant="8" id="N8T-Q7-kso"/>
                                                     <constraint firstItem="LM9-EG-J4a" firstAttribute="top" secondItem="5pa-J1-ebg" secondAttribute="bottom" constant="4" id="NfF-Z3-WQp"/>
+                                                    <constraint firstItem="Ca6-HV-CAY" firstAttribute="trailing" secondItem="LM9-EG-J4a" secondAttribute="trailing" id="OeJ-Bi-3Vv"/>
                                                     <constraint firstItem="nst-qO-Zxu" firstAttribute="centerX" secondItem="MXn-Wa-Cgw" secondAttribute="centerX" id="Ptg-rA-51b"/>
                                                     <constraint firstItem="MXn-Wa-Cgw" firstAttribute="leading" secondItem="4sh-Mw-yec" secondAttribute="leading" constant="12" id="Rdh-jL-1Kb"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yye-Ri-oAU" secondAttribute="trailing" constant="144" id="Sis-y6-pQJ"/>
@@ -365,6 +367,7 @@
                                                     <constraint firstItem="PU8-Je-WmA" firstAttribute="centerX" secondItem="4sh-Mw-yec" secondAttribute="centerX" id="p1Z-sY-MZP"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tWL-aZ-a2o" secondAttribute="trailing" constant="20" symbolic="YES" id="pBY-U1-UBG"/>
                                                     <constraint firstItem="vqa-zm-TTa" firstAttribute="top" secondItem="nst-qO-Zxu" secondAttribute="bottom" constant="16" id="pUv-rF-8fF"/>
+                                                    <constraint firstItem="Ca6-HV-CAY" firstAttribute="top" secondItem="yye-Ri-oAU" secondAttribute="bottom" constant="6" id="q2Y-u8-TxU"/>
                                                     <constraint firstAttribute="height" constant="350" id="q5F-mb-2Oz"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vqa-zm-TTa" secondAttribute="trailing" constant="20" symbolic="YES" id="s5H-zW-EKJ"/>
                                                     <constraint firstItem="MXn-Wa-Cgw" firstAttribute="top" secondItem="RHg-Vt-zzx" secondAttribute="bottom" constant="12" id="t8D-58-rDh"/>

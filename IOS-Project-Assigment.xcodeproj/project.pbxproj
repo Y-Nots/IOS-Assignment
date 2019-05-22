@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		56264A522294897B004638BA /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56264A512294897B004638BA /* Tools.swift */; };
 		564680172292063300E9326A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 564680162292063300E9326A /* Default-568h@2x.png */; };
-		5646801B2293266D00E9326A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5646801A2293266D00E9326A /* GoogleService-Info.plist */; };
 		5646801F2293481D00E9326A /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5646801E2293481D00E9326A /* HomeScreenViewController.swift */; };
 		56E022C12295C78F00DE7D33 /* Homescreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E022C02295C78F00DE7D33 /* Homescreen.storyboard */; };
 		56E022C42295C7F800DE7D33 /* Freinds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E022C32295C7F800DE7D33 /* Freinds.swift */; };
 		56E022C82295D51000DE7D33 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E022C72295D51000DE7D33 /* TabbarViewController.swift */; };
+		56E022CA2295DDB400DE7D33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56E022C92295DDB400DE7D33 /* GoogleService-Info.plist */; };
 		8A50F99FDC92729A78446BE1 /* Pods_IOS_Project_Assigment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FB091DC91597F1793B9D70 /* Pods_IOS_Project_Assigment.framework */; };
 		B0E7901320250813002DA8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E7901220250813002DA8AF /* AppDelegate.swift */; };
 		B0E7901520250813002DA8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E7901420250813002DA8AF /* ViewController.swift */; };
@@ -34,11 +34,11 @@
 		53FB091DC91597F1793B9D70 /* Pods_IOS_Project_Assigment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Project_Assigment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56264A512294897B004638BA /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		564680162292063300E9326A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5646801A2293266D00E9326A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5646801E2293481D00E9326A /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		56E022C02295C78F00DE7D33 /* Homescreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homescreen.storyboard; sourceTree = "<group>"; };
 		56E022C32295C7F800DE7D33 /* Freinds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freinds.swift; sourceTree = "<group>"; };
 		56E022C72295D51000DE7D33 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		56E022C92295DDB400DE7D33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B0E7900F20250813002DA8AF /* IOS-Project-Assigment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Project-Assigment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E7901220250813002DA8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0E7901420250813002DA8AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,8 +137,8 @@
 				B0E790262025085D002DA8AF /* RoundedWhiteButton.swift */,
 				B0E7901920250813002DA8AF /* Assets.xcassets */,
 				B0E7901E20250813002DA8AF /* Info.plist */,
-				5646801A2293266D00E9326A /* GoogleService-Info.plist */,
 				56264A512294897B004638BA /* Tools.swift */,
+				56E022C92295DDB400DE7D33 /* GoogleService-Info.plist */,
 			);
 			path = "IOS-Project-Assigment";
 			sourceTree = "<group>";
@@ -216,9 +216,9 @@
 				B0E7901D20250813002DA8AF /* LaunchScreen.storyboard in Resources */,
 				564680172292063300E9326A /* Default-568h@2x.png in Resources */,
 				56E022C12295C78F00DE7D33 /* Homescreen.storyboard in Resources */,
-				5646801B2293266D00E9326A /* GoogleService-Info.plist in Resources */,
 				B0E7901A20250813002DA8AF /* Assets.xcassets in Resources */,
 				B0E7901820250813002DA8AF /* Main.storyboard in Resources */,
+				56E022CA2295DDB400DE7D33 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -163,6 +163,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     
     private func signUp() {
         
+        print("Succuess signup")
         guard let username = usernameField.text else { return }
         guard let email = emailField.text else { return }
         guard let password = passwordField.text else { return }
@@ -211,54 +212,98 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     }
 
     private func validateForm() -> Bool {
+//
         
-        if usernameField.text == "" {
-            //lblError.text = "Please enter a username"
-            
-             print("Please enter a username")
-            self.resetForm()
+        var title  = ""
+        var message = ""
+//        if usernameField.text == "" {
+//            //lblError.text = "Please enter a username"
+//
+//             print("Please enter a username")
+//            self.resetForm()
+//            return false
+//
+//
+//
+//        }
+//        if usernameField.text?.count ?? 0 < 6 {
+//            //lblError.text = "Username should be at least 6 characters long"
+//
+//            print("Username should be at least 6 characters long")
+//            self.resetForm()
+//            return false
+//        }
+//        if emailField.text == "" || Tools.isValidEmail(testStr: emailField.text ?? "") {
+//            //lblError.text = "Please enter a valid email"
+//            print("Paaword should be at least 6 characters long")
+//            self.resetForm()
+//            return false
+//        }
+//        if passwordField.text == "" || passwordField.text?.count ?? 0 < 6 {
+//           // lblError.text = "Paaword should be at least 6 characters long"
+//
+//            print("Paaword should be at least 6 characters long")
+//            self.resetForm()
+//            return false
+//        }
+//        if passwordField.text != ConfpasswordField.text {
+//            print("Passwords doesnot match")
+//            //lblError.text = "Passwords doesnot match"
+//            self.resetForm()
+//            return false
+//        }
+        
+        
+        
+        if (usernameField.text?.isEmpty)!{
+            print("Please enter a username")
+             title = "Empty Fields"
+            message = "Please enter a username"
+            self.resetForm(title: title,message: message)
             return false
-            
-            
-            
         }
-        if usernameField.text?.count ?? 0 < 6 {
-            //lblError.text = "Username should be at least 6 characters long"
-            
-            print("Username should be at least 6 characters long")
-            self.resetForm()
+        else if (emailField.text?.isEmpty)!{
+             print("Please enter a Email")
+            title = "Empty Fields"
+            message = "Please enter a Email"
+            self.resetForm(title: title,message: message)
             return false
         }
-        if emailField.text == "" || Tools.isValidEmail(testStr: emailField.text ?? "") {
-            //lblError.text = "Please enter a valid email"
-            print("Paaword should be at least 6 characters long")
-            self.resetForm()
+        
+        else if (passwordField.text?.isEmpty)!{
+            print("Please enter a Password")
+            title = "Empty Fields"
+            message = "Please enter a Password"
+            self.resetForm(title: title,message: message)
             return false
         }
-        if passwordField.text == "" || passwordField.text?.count ?? 0 < 6 {
-           // lblError.text = "Paaword should be at least 6 characters long"
+        else if (ConfpasswordField.text?.isEmpty)!{
+            print("Please enter a Confrm password")
+            title = "Empty Fields"
+            message = "Please enter a Confrm password"
+            self.resetForm(title: title,message: message)
+            return false
+        }
+           else if passwordField.text != ConfpasswordField.text {
             
-            print("Paaword should be at least 6 characters long")
-            self.resetForm()
-            return false
-        }
-        if passwordField.text != ConfpasswordField.text {
             print("Passwords doesnot match")
             //lblError.text = "Passwords doesnot match"
-            self.resetForm()
+            title = "Missmatch !"
+            message = "Passwords does not match"
+            self.resetForm(title: title,message: message)
             return false
-        }
+            }
         
         
         return true
     }
     
     
-    func resetForm() {
-        let alert = UIAlertController(title: "Error logging in", message: nil, preferredStyle: .alert)
+    func resetForm(title:String,message:String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
-        
+
         setContinueButton(enabled: true)
         continueButton.setTitle("Continue", for: .normal)
         activityView.stopAnimating()

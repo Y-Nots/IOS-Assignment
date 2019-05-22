@@ -111,6 +111,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         let email = emailField.text
         let password = passwordField.text
         let confopassword = ConfpasswordField.text
+        
         let formFilled = username != nil && username != "" && email != nil && email != "" && password != nil && password != "" && confopassword != nil && confopassword != ""
         setContinueButton(enabled: formFilled)
     }
@@ -215,6 +216,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
             //lblError.text = "Please enter a username"
             
              print("Please enter a username")
+            self.resetForm()
             return false
             
             
@@ -224,27 +226,42 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
             //lblError.text = "Username should be at least 6 characters long"
             
             print("Username should be at least 6 characters long")
+            self.resetForm()
             return false
         }
         if emailField.text == "" || Tools.isValidEmail(testStr: emailField.text ?? "") {
             //lblError.text = "Please enter a valid email"
             print("Paaword should be at least 6 characters long")
+            self.resetForm()
             return false
         }
         if passwordField.text == "" || passwordField.text?.count ?? 0 < 6 {
            // lblError.text = "Paaword should be at least 6 characters long"
             
             print("Paaword should be at least 6 characters long")
+            self.resetForm()
             return false
         }
         if passwordField.text != ConfpasswordField.text {
             print("Passwords doesnot match")
             //lblError.text = "Passwords doesnot match"
+            self.resetForm()
             return false
         }
         
         
         return true
+    }
+    
+    
+    func resetForm() {
+        let alert = UIAlertController(title: "Error logging in", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+        setContinueButton(enabled: true)
+        continueButton.setTitle("Continue", for: .normal)
+        activityView.stopAnimating()
     }
 
 }

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oj0-0w-6Ku">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Homework-->
+        <scene sceneID="VBK-bD-rIi">
+            <objects>
+                <viewController id="lRu-FT-tM3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iVm-4S-mKe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="X20-o2-ObU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Homework" image="homework" id="kue-ja-saT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQz-Py-TRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182" y="-59"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="zdy-A3-a8r">
+            <objects>
+                <viewController id="dWn-iu-WZ0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nUG-YH-ul3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hqn-ba-q8T"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="dng-3a-xiM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3II-4y-fad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-662" y="588"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="4tn-Ny-oyo">
+            <objects>
+                <viewController id="2DP-O5-tpf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="znd-c4-vJR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Osz-11-TOt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="nC1-EK-Wfa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RWV-XJ-QXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="-899"/>
+        </scene>
+        <!--Tabbar View Controller-->
+        <scene sceneID="yEf-H6-73K">
+            <objects>
+                <tabBarController storyboardIdentifier="Homescreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oj0-0w-6Ku" customClass="TabbarViewController" customModule="IOS_Project_Assigment" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hmk-vc-OON">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2DP-O5-tpf" kind="relationship" relationship="viewControllers" id="xNZ-Qg-H70"/>
+                        <segue destination="dWn-iu-WZ0" kind="relationship" relationship="viewControllers" id="SGt-We-7z5"/>
+                        <segue destination="lRu-FT-tM3" kind="relationship" relationship="viewControllers" id="bYs-4d-7ja"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jM7-nD-V7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1254" y="-437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Profile" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
+        <image name="homework" width="30" height="30"/>
+    </resources>
+</document>

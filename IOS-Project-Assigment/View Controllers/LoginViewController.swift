@@ -148,6 +148,15 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         Auth.auth().signIn(withEmail: email, password: pass) { user, error in
             if error == nil && user != nil {
                 self.dismiss(animated: false, completion: nil)
+                
+                //Open next UI
+                let storyboard = UIStoryboard(name: "Homescreen", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "Homescreen") as! TabbarViewController
+                self.present(controller, animated: true, completion: nil)
+                //End
+                
+                
+                
             } else {
                 print("Error logging in: \(error!.localizedDescription)")
                 self.resetForm()

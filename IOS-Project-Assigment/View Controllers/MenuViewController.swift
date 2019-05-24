@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  FirebaseDemo
-//
-//  Created by Robert Canton on 2017-09-13.
-//  Copyright © 2017 Robert Canton. All rights reserved.
-//
+
 
 import UIKit
 import Firebase
@@ -44,9 +38,7 @@ class MenuViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
             super.viewDidAppear(animated)
         
-        if let user = Auth.auth().currentUser{
-            self.performSegue(withIdentifier: "toMainScreen", sender:self)
-        }
+       
         
         
     }

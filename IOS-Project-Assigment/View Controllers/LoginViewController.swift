@@ -1,10 +1,4 @@
-//
-//  LoginViewController.swift
-//  CloudFunctions
-//
-//  Created by Robert Canton on 2017-09-13.
-//  Copyright © 2017 Robert Canton. All rights reserved.
-//
+
 
 import Foundation
 import UIKit
@@ -90,11 +84,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         activityView.center = continueButton.center
     }
     
-    /**
-     Enables the continue button if the **username**, **email**, and **password** fields are all non-empty.
-     
-     - Parameter target: The targeted **UITextField**.
-     */
+   
     
     @objc func textFieldChanged(_ target:UITextField) {
         let email = emailField.text
@@ -123,9 +113,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         return true
     }
     
-    /**
-     Enables or Disables the **continueButton**.
-     */
+   
     
     func setContinueButton(enabled:Bool) {
         if enabled {
@@ -147,15 +135,8 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
         Auth.auth().signIn(withEmail: email, password: pass) { user, error in
             if error == nil && user != nil {
-                self.dismiss(animated: false, completion: nil)
                 
-                //Open next UI
-                let storyboard = UIStoryboard(name: "Homescreen", bundle: nil)
-                let controller = storyboard.instantiateViewController(withIdentifier: "Homescreen") as! TabbarViewController
-                self.present(controller, animated: true, completion: nil)
-                //End
-                
-                
+                self.performSegue(withIdentifier: "goToHome", sender: self)
                 
             } else {
                 print("Error logging in: \(error!.localizedDescription)")

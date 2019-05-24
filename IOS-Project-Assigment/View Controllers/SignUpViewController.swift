@@ -1,10 +1,3 @@
-//
-//  SignUpViewController.swift
-//  CloudFunctions
-//
-//  Created by Robert Canton on 2017-09-13.
-//  Copyright © 2017 Robert Canton. All rights reserved.
-//
 
 import Foundation
 import UIKit
@@ -100,11 +93,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         activityView.center = continueButton.center
     }
     
-    /**
-     Enables the continue button if the **username**, **email**, and **password** fields are all non-empty.
-     
-     - Parameter target: The targeted **UITextField**.
-     */
     
     @objc func textFieldChanged(_ target:UITextField) {
         let username = usernameField.text

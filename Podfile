@@ -12,5 +12,6 @@ pod 'Firebase/Database'
 pod 'IQKeyboardManager'
 pod 'Firebase/Auth'
 pod 'GoogleSignIn'
+pod 'Kingfisher' , '~> 4.2'
 
 end

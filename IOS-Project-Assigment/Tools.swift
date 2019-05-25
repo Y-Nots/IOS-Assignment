@@ -1,10 +1,4 @@
-//
-//  Tool.swift
-//  IOS-Project-Assigment
-//
-//  Created by kevin shayn on 5/22/19.
-//  Copyright © 2019 Robert Canton. All rights reserved.
-//
+
 
 import Foundation
 class Tools {

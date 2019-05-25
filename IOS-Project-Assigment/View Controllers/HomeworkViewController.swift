@@ -8,6 +8,8 @@ class HomeworkViewController: UIViewController, UITableViewDelegate, UITableView
     
     var getNotelist:[String] = []
     
+   
+    
     @IBOutlet weak var notetableview: UITableView!
     
     let defaults = UserDefaults.standard

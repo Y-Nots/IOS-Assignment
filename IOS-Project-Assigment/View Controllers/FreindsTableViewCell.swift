@@ -5,14 +5,7 @@ import Kingfisher
 
 class FreindsTableViewCell: UITableViewCell {
 
-//    @IBOutlet weak var profileImage: UIImageView!
-//    @IBOutlet weak var profileName: UILabel!
-//    @IBOutlet weak var profileCityName: UILabel!
-    
-//    @IBOutlet weak var Freindname: UILabel!
-//    @IBOutlet weak var FreindCity: UILabel!
   
-    
     @IBOutlet weak var FreindImage: UIImageView!
     @IBOutlet weak var Freindname: UILabel!
     @IBOutlet weak var Freindcity: UILabel!

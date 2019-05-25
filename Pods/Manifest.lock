@@ -1,4 +1,7 @@
 PODS:
+  - Alamofire (4.8.2)
+  - Firebase/Analytics (6.1.0):
+    - Firebase/Core
   - Firebase/Auth (6.1.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.1.0)
@@ -74,25 +77,30 @@ PODS:
   - GoogleUtilities/UserDefaults (6.1.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.2)
-  - IQKeyboardManager (6.3.0)
-  - Kingfisher (4.10.1)
+  - IQKeyboardManagerSwift (6.3.0)
+  - Kingfisher (4.0.0)
   - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - GoogleSignIn
-  - IQKeyboardManager
-  - Kingfisher (~> 4.2)
+  - IQKeyboardManagerSwift
+  - Kingfisher (= 4.0)
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -105,12 +113,14 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GoogleUtilities
     - GTMSessionFetcher
-    - IQKeyboardManager
+    - IQKeyboardManagerSwift
     - Kingfisher
     - leveldb-library
     - nanopb
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Firebase: 8d77bb33624ae9b62d745d82ec023de5f70f7e4f
   FirebaseAnalytics: 629301c2b9925f3537d4093a17a72751ae5b7084
   FirebaseAuth: 4281d6d98a90881e00710fa8d9e37c2ccdfc7d80
@@ -123,11 +133,12 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
   GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
-  IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
-  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  Kingfisher: 5cd55fa124d1e731f1d4b04b02832e0e0432d1a9
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: a1a604f23573cefdc32edd67e0f4ae7bab7b0b41
+PODFILE CHECKSUM: 07002f56a2a098c57e8e961f1de73c141851ad12
 
 COCOAPODS: 1.6.1

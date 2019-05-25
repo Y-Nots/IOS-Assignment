@@ -46,11 +46,12 @@ class HomeScreenViewController: UIViewController,UITableViewDelegate,UITableView
         performSegue(withIdentifier: "showFriendDetails", sender: self)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let destination = segue.destination as? FriendDetailViewController{
-//            destination.selectedFriend = self.friends[(tableView.indexPathForSelectedRow?.row)!]
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? FriendDetailViewController{
+            destination.Frienddetails = self.friends[(hometableview.indexPathForSelectedRow?.row)!]
+        }
+    }
+    
     @IBAction func Logoutscreen(_ sender: Any) {
         try! Auth.auth().signOut()
         //Open next UI
@@ -67,7 +68,7 @@ class HomeScreenViewController: UIViewController,UITableViewDelegate,UITableView
     
     //Load data from firebase
     func loadFriendsData(){
-        //        var tempFriendList: [Friend] = []
+    
         Database.database().reference().child("Friends").observe(.childAdded, with: {(snapshot) in
             
             if let dictionary = snapshot.value as? [String:AnyObject]{

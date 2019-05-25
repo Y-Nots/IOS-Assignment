@@ -9,9 +9,11 @@ target 'IOS-Project-Assigment' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Database'
-pod 'IQKeyboardManager'
 pod 'Firebase/Auth'
 pod 'GoogleSignIn'
-pod 'Kingfisher' , '~> 4.2'
+pod 'IQKeyboardManagerSwift'
+pod 'Firebase/Analytics'
+pod 'Firebase/Database'
+pod 'Kingfisher', '4.0'
 
 end

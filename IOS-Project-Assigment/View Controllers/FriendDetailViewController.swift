@@ -1,6 +1,7 @@
 
 
 import UIKit
+import Kingfisher
 
 class FriendDetailViewController: UIViewController {
     
@@ -27,10 +28,13 @@ class FriendDetailViewController: UIViewController {
     
     //LoadData to controllers
     func loadData(){
+        
+        print(Frienddetails!.firstName)
         let url = URL(string:(self.Frienddetails?.profileImageURL)!)
         Freindprofileimage.kf.indicatorType = .activity
-//        let processor = RoundCornerImageProcessor(cornerRadius: 20)
-        Freindprofileimage.kf.setImage(with: url)
+       let processor = RoundCornerImageProcessor(cornerRadius: 20)
+        Freindprofileimage.kf.setImage(with: url, options:[.processor(processor)])
+
         
         
         profName.text = "\(self.Frienddetails!.firstName) \(self.Frienddetails!.lastName)"

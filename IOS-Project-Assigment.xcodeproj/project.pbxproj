@@ -10,7 +10,7 @@
 		56264A522294897B004638BA /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56264A512294897B004638BA /* Tools.swift */; };
 		564680172292063300E9326A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 564680162292063300E9326A /* Default-568h@2x.png */; };
 		5646801F2293481D00E9326A /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5646801E2293481D00E9326A /* HomeScreenViewController.swift */; };
-		56E022C12295C78F00DE7D33 /* Homescreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E022C02295C78F00DE7D33 /* Homescreen.storyboard */; };
+		56C9A5A722999FD300BB44F5 /* ResetpasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9A5A622999FD300BB44F5 /* ResetpasswordViewController.swift */; };
 		56E022C42295C7F800DE7D33 /* Freinds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E022C32295C7F800DE7D33 /* Freinds.swift */; };
 		56E022C82295D51000DE7D33 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E022C72295D51000DE7D33 /* TabbarViewController.swift */; };
 		56E022CA2295DDB400DE7D33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56E022C92295DDB400DE7D33 /* GoogleService-Info.plist */; };
@@ -43,7 +43,7 @@
 		56264A512294897B004638BA /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		564680162292063300E9326A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5646801E2293481D00E9326A /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
-		56E022C02295C78F00DE7D33 /* Homescreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homescreen.storyboard; sourceTree = "<group>"; };
+		56C9A5A622999FD300BB44F5 /* ResetpasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetpasswordViewController.swift; sourceTree = "<group>"; };
 		56E022C32295C7F800DE7D33 /* Freinds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freinds.swift; sourceTree = "<group>"; };
 		56E022C72295D51000DE7D33 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		56E022C92295DDB400DE7D33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		56468015229204A000E9326A /* View Controllers */ = {
+		56468015229204A000E9326A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				B0E790272025085E002DA8AF /* InitialViewController.swift */,
@@ -92,15 +92,33 @@
 				B0E790252025085D002DA8AF /* MenuViewController.swift */,
 				5646801E2293481D00E9326A /* HomeScreenViewController.swift */,
 				56E022C72295D51000DE7D33 /* TabbarViewController.swift */,
-				56E022CD22973D9900DE7D33 /* FreindsTableViewCell.swift */,
 				56E022D32297640100DE7D33 /* FriendDetailViewController.swift */,
 				56E022D52297699800DE7D33 /* HomeworkViewController.swift */,
 				56E022D7229769B800DE7D33 /* NoteViewController.swift */,
 				56E022D9229769D700DE7D33 /* ProfileViewController.swift */,
-				56E022DB2297DCD000DE7D33 /* NoteTableViewCell.swift */,
 				56E022DF2297E05200DE7D33 /* AddnewnoteViewController.swift */,
+				56C9A5A622999FD300BB44F5 /* ResetpasswordViewController.swift */,
 			);
-			path = "View Controllers";
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		56C9A5A8229A206400BB44F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56E022DB2297DCD000DE7D33 /* NoteTableViewCell.swift */,
+				56E022CD22973D9900DE7D33 /* FreindsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56C9A5A9229A20EB00BB44F5 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				B0E790282025085E002DA8AF /* HelperExtensions.swift */,
+				56264A512294897B004638BA /* Tools.swift */,
+				B0E790262025085D002DA8AF /* RoundedWhiteButton.swift */,
+			);
+			path = Help;
 			sourceTree = "<group>";
 		};
 		56E022BF2295C71800DE7D33 /* Storybords */ = {
@@ -109,7 +127,6 @@
 				56E022D12297563000DE7D33 /* Home.storyboard */,
 				B0E7901620250813002DA8AF /* Main.storyboard */,
 				B0E7901B20250813002DA8AF /* LaunchScreen.storyboard */,
-				56E022C02295C78F00DE7D33 /* Homescreen.storyboard */,
 			);
 			path = Storybords;
 			sourceTree = "<group>";
@@ -153,15 +170,14 @@
 		B0E7901120250813002DA8AF /* IOS-Project-Assigment */ = {
 			isa = PBXGroup;
 			children = (
+				56C9A5A9229A20EB00BB44F5 /* Help */,
+				56C9A5A8229A206400BB44F5 /* View */,
 				56E022C22295C7B800DE7D33 /* Models */,
 				56E022BF2295C71800DE7D33 /* Storybords */,
-				56468015229204A000E9326A /* View Controllers */,
+				56468015229204A000E9326A /* Controllers */,
 				B0E7901220250813002DA8AF /* AppDelegate.swift */,
-				B0E790282025085E002DA8AF /* HelperExtensions.swift */,
-				B0E790262025085D002DA8AF /* RoundedWhiteButton.swift */,
 				B0E7901920250813002DA8AF /* Assets.xcassets */,
 				B0E7901E20250813002DA8AF /* Info.plist */,
-				56264A512294897B004638BA /* Tools.swift */,
 				56E022C92295DDB400DE7D33 /* GoogleService-Info.plist */,
 			);
 			path = "IOS-Project-Assigment";
@@ -204,9 +220,10 @@
 		B0E7900720250813002DA8AF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Robert Canton";
+				ORGANIZATIONNAME = "Kevin Shayn";
 				TargetAttributes = {
 					B0E7900E20250813002DA8AF = {
 						CreatedOnToolsVersion = 9.2;
@@ -240,7 +257,6 @@
 				56E022D22297563000DE7D33 /* Home.storyboard in Resources */,
 				B0E7901D20250813002DA8AF /* LaunchScreen.storyboard in Resources */,
 				564680172292063300E9326A /* Default-568h@2x.png in Resources */,
-				56E022C12295C78F00DE7D33 /* Homescreen.storyboard in Resources */,
 				B0E7901A20250813002DA8AF /* Assets.xcassets in Resources */,
 				B0E7901820250813002DA8AF /* Main.storyboard in Resources */,
 				56E022CA2295DDB400DE7D33 /* GoogleService-Info.plist in Resources */,
@@ -281,29 +297,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IOS-Project-Assigment/Pods-IOS-Project-Assigment-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -354,6 +360,7 @@
 				56E022D62297699800DE7D33 /* HomeworkViewController.swift in Sources */,
 				B0E7901520250813002DA8AF /* ViewController.swift in Sources */,
 				5646801F2293481D00E9326A /* HomeScreenViewController.swift in Sources */,
+				56C9A5A722999FD300BB44F5 /* ResetpasswordViewController.swift in Sources */,
 				56E022C82295D51000DE7D33 /* TabbarViewController.swift in Sources */,
 				B0E7902D2025085E002DA8AF /* InitialViewController.swift in Sources */,
 				B0E7901320250813002DA8AF /* AppDelegate.swift in Sources */,

@@ -15,5 +15,6 @@ pod 'IQKeyboardManagerSwift'
 pod 'Firebase/Analytics'
 pod 'Firebase/Database'
 pod 'Kingfisher', '4.0'
+pod 'Firebase/Storage' ,'4.0' 
 
 end
